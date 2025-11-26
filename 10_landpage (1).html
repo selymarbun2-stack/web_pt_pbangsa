@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* ini adalah internal css */
+
+      header {
+        background-color: #0498af;
+        text-align: center;
+        padding: 15px 0;
+        color: white;
+      }
+
+      nav {
+        background-color: #07bdef;
+        text-align: center;
+        padding: 10px 0;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: whitesmoke;
+        margin: 0 15px;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+        color: rgb(225, 255, 0);
+      }
+
+      .hero {
+        text-align: center;
+        padding: 50px 0;
+        height: 400px;
+        color: white;
+        text-shadow: 2px 2px 4px #000000;
+        /* background-color: grey; */
+        background: url("https://i2.wp.com/blog.tripcetera.com/id/wp-content/uploads/2020/10/pulau-padar.jpg")
+          no-repeat center center/cover;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-size: 30px;
+      }
+
+      .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+        padding: 20px 0;
+        /* background-color: red; */
+      }
+
+      .services {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .service {
+        flex: 1;
+        min-width: 250px;
+        background: #2ac8f4;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .service h3 {
+        color: #101110;
+      }
+
+      form {
+        background: #f4f2f2;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      input,
+      textarea {
+        width: 99%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #081188;
+        border-radius: 5px;
+      }
+
+      button {
+        background: #0490e7;
+        color: rgb(139, 18, 18);
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #036ca9;
+      }
+
+      footer {
+        text-align: center;
+        background: #333;
+        color: white;
+        padding: 10px 0;
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Selamat Datang Di PT Putri Bangsa</h1>
+      <p>Karena Putri Bangsa Terpercaya</p>
+    </header>
+    <nav>
+      <a href="#beranda">Beranda</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#layanan">Layanan</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+    <section class="hero" id="beranda">
+      <h1>Selamat datang di Website kami</h1>
+    </section>
+
+    <section class="container" id="layanan">
+      <h2 style="text-align: center">Layanan Kami</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Servis Komputer</h3>
+          <p>Komputer, laptop & lainnya</p>
+        </div>
+        <div class="service">
+          <h3>Servis Mesin Cuci</h3>
+          <p>Mesin cuci 1, 2 atau 3 tabung</p>
+        </div>
+        <div class="service">
+          <h3>Servis Motor</h3>
+          <p>ICE, listrik dan lainnya</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id="tentang">
+      <h2 style="text-align: center">Tentang Kami</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Visi</h3>
+          <p>Mesin cuci 1, 2 atau 3 tabung</p>
+        </div>
+        <div class="service">
+          <h3>Misi</h3>
+          <p>ICE, listrik dan lainnya</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id="kontak">
+      <h2 style="text-align: center">Hubungi kami</h2>
+      <form action="">
+        <label>Nama</label>
+        <input type="text" placeholder="Masukkan nama Anda" />
+        <label>Email</label>
+        <input type="email" placeholder="Masukkan email Anda" />
+        <label>Pesan</label>
+        <textarea rows="5" placeholder="Masukkan pesan Anda"></textarea>
+        <button type="submit">Kirim</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; Copyright © 2024 PT Doa Ibu</p>
+    </footer>
+  </body>
+</html>
